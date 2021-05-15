@@ -15,7 +15,7 @@ const mailinformation={
     text:"Im sending my first mail with nodejs.",
 };
 
-transfer.sendMail(mailinformation,function(error){
+transfer.sendMail(mailinformation,(error)=> {
     if (error) console.log(error);
     else console.log("Your mail has been sent!");
 });
